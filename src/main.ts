@@ -14,10 +14,10 @@ bootstrap(AppComponent, [
     apiKey: "AIzaSyDT9wADdiADTmhqvjrF3N6kk9tht9ACiAs",
     authDomain: "tracking-app-2574d.firebaseapp.com",
     databaseURL: "https://tracking-app-2574d.firebaseio.com",
-    storageBucket: "tracking-app-2574d.appspot.com"
+    storageBucket: "tracking-app-2574d.appspot.com",
   }),
   firebaseAuthConfig({
     provider: AuthProviders.Google,
     method: AuthMethods.Popup,
   })
-]);
+]).catch(err => console.error(err));
