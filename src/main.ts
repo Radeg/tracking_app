@@ -19,5 +19,6 @@ bootstrap(AppComponent, [
   firebaseAuthConfig({
     provider: AuthProviders.Google,
     method: AuthMethods.Popup,
+    scope: ['https://www.googleapis.com/auth/userinfo.profile'],
   })
 ]).catch(err => console.error(err));

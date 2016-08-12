@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
+declare var gapi: any;
+
 @Component({
   moduleId: module.id,
   selector: 'app-root',
@@ -16,5 +18,9 @@ export class AppComponent {
 
   login() {
     this.af.auth.login();
+  }
+
+  signOut() {
+    this.af.auth.logout();
   }
 }
