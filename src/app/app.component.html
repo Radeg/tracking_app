@@ -1,4 +1,4 @@
-<div>Hello, {{ (af.auth | async)?.uid }} </div>
+<div>Hello, {{(af.auth | async)?.info}}</div>
 <button (click)="login()">Login</button>
 <button (click)="signOut()">Sign Out</button>
 
